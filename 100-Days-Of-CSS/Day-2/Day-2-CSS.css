@@ -1,0 +1,76 @@
+body {
+
+    background-color: whitesmoke;
+
+}
+
+.box2{
+
+    /*position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -200px;
+    box-shadow: 0px 2px 8px rgb(43, 42, 42);*/  
+
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 400px;
+
+    /*Splits space equally horizontally*/
+    margin: auto;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    border-radius: 2px;
+    background-color: green;
+    box-shadow: 4px 8px 8px 0 rgba(0,0,0,0.1);
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+
+}
+
+p {
+    height: 15px;
+    width: 90px;
+    margin-top: 1px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    box-shadow: 4px 8px 8px 0 rgba(0,0,0,0.1);
+    
+
+}
+
+@keyframes right{
+    50% {transform: translateY(-30px)}
+    100% {transform: rotate(45deg)}
+}
+
+@keyframes left{
+    50% {transform: translateY(30px)}
+    100% {transform: rotate(45deg)}
+}
+
+@keyframes disappear{
+   100% {transform: scale(0)}
+}
+
+.rotate-right:active {
+    animation: right 1s alternate forwards;
+    -webkit-animation: right 1s alternate forwards;
+}
+
+.rotate-left:active {
+    animation: left 1s forwards;
+    -webkit-animation: left 1s forwards;
+
+}
+
+.disappear:active {
+    animation: disappear 1s forwards;
+    -webkit-animation: disappear 1s forwards;
+
+}
+
+
